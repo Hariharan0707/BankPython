@@ -1,0 +1,695 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900" rel="stylesheet">
+
+    <title>Softy Pinko - Bootstrap 4.0 Theme</title>
+<!--
+SOFTY PINKO
+https://templatemo.com/tm-535-softy-pinko
+-->
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/bootstrap.min.css' %}">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/font-awesome.css' %}">
+
+    <link rel="stylesheet" href="{% static 'assets/css/templatemo-softy-pinko.css' %}">
+
+    </head>
+    
+    <body>
+    
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+    
+    
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">HFC BANK</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#welcome">Home</a>
+        </li>
+          {% if user.is_authenticated %}
+        <li class="nav-item">
+          <a class="nav-link" href="entry/logout">Logout</a>
+        </li>
+          {% else %}
+        <li class="nav-item">
+          <a class="nav-link" href="entry/register">Register</a>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link" href="entry/login">Login</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Branches
+          </a>
+
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="https://en.wikipedia.org/wiki/Ernakulam">Ernakulam</a></li>
+            <li><a class="dropdown-item" href="https://en.wikipedia.org/wiki/Kasaragod">Kasargod</a></li>
+            <li><a class="dropdown-item" href="https://en.wikipedia.org/wiki/Wayanad_district">Wayanad</a></li>
+              <li><a class="dropdown-item" href="https://en.wikipedia.org/wiki/Alappuzha">Alapuzha</a></li>
+              <li><a class="dropdown-item" href="https://en.wikipedia.org/wiki/Palakkad">Palakkad</a></li>
+              {% endif %}
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!--                    <nav class="main-nav">-->
+<!--                        &lt;!&ndash; ***** Logo Start ***** &ndash;&gt;-->
+<!--                        <a href="#" class="logo">-->
+<!--                            <img src="{% static 'assets/images/logo.png' %}" alt="Softy Pinko"/>-->
+<!--                        </a>-->
+<!--                        &lt;!&ndash; ***** Logo End ***** &ndash;&gt;-->
+<!--                        &lt;!&ndash; ***** Menu Start ***** &ndash;&gt;-->
+<!--                        <ul class="nav">-->
+<!--                            <li><a href="#welcome" class="active">Home</a></li>-->
+<!--                            <li><a href="#features">About</a></li>-->
+<!--                            <li><a href="#work-process">Work Process</a></li>-->
+<!--                            {% if user.is_authenticated %}-->
+<!--                            <li><a href=""></a></li>-->
+<!--                             <li><a href="entry/logout">Logout</a></li>-->
+<!--                            {% else %}-->
+<!--                            <li><a href="entry/register">Register</a></li>-->
+<!--                            <li><a href="entry/login">Login</a></li>-->
+<!--                            <li><a href="#contact-us">Branches</a></li>-->
+<!--                            {% endif %}-->
+<!--                        </ul>-->
+<!--                        <a class='menu-trigger'>-->
+<!--                            <span>Menu</span>-->
+<!--                        </a>-->
+<!--                        &lt;!&ndash; ***** Menu End ***** &ndash;&gt;-->
+<!--                    </nav>-->
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <!-- ***** Welcome Area Start ***** -->
+    <div class="welcome-area" id="welcome">
+
+        <!-- ***** Header Text Start ***** -->
+        <div class="header-text">
+            <div class="container">
+                <div class="row">
+                    <div class="offset-xl-3 col-xl-6 offset-lg-2 col-lg-8 col-md-12 col-sm-12">
+                        <h1>Welcome to the <strong>HOME PAGE</strong><br></h1>
+                        <p>BANKING AT HOME:
+                        All of your accounts at your fingertips.</p>
+                        <a href="#features" class="main-button-slider">Discover More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ***** Header Text End ***** -->
+    </div>
+    <!-- ***** Welcome Area End ***** -->
+
+    <!-- ***** Features Small Start ***** -->
+    <section class="section home-feature">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row">
+                        <!-- ***** Features Small Item Start ***** -->
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.2s">
+                            <div class="features-small-item">
+                                <div class="icon">
+                                    <i><img src="{% static 'assets/images/featured-item-01.png' %}" alt=""></i>
+                                </div>
+                                <h5 class="features-title">TERM LOANS</h5>
+                                <p>A term loan is a type of small business loan that can help a company invest in the future and expand its business.</p>
+                            </div>
+                        </div>
+                        <!-- ***** Features Small Item End ***** -->
+
+                        <!-- ***** Features Small Item Start ***** -->
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.4s">
+                            <div class="features-small-item">
+                                <div class="icon">
+                                    <i><img src="{% static 'assets/images/featured-item-01.png' %}" alt=""></i>
+                                </div>
+                                <h5 class="features-title">UNLIMITED CASH BACK</h5>
+                                <p>Unlimited cash back means that your credit card offers cash-back rewards with no caps or limits on how much you can earn</p>
+                            </div>
+                        </div>
+                        <!-- ***** Features Small Item End ***** -->
+
+                        <!-- ***** Features Small Item Start ***** -->
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.6s">
+                            <div class="features-small-item">
+                                <div class="icon">
+                                    <i><img src="{% static 'assets/images/featured-item-01.png' %}" alt=""></i>
+                                </div>
+                                <h5 class="features-title">GET PERSONAL FINANCING</h5>
+                                <p>Personal finance is about managing your money to meet your personal financial goals.</p>
+                            </div>
+                        </div>
+                        <!-- ***** Features Small Item End ***** -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Features Small End ***** -->
+
+    <!-- ***** Features Big Item Start ***** -->
+    <section class="section padding-top-70 padding-bottom-0" id="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-12 col-sm-12 align-self-center" data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+                    <img src="{% static 'assets/images/left-image.png' %}" class="rounded img-fluid d-block mx-auto" alt="App">
+                </div>
+                <div class="col-lg-1"></div>
+                <div class="col-lg-6 col-md-12 col-sm-12 align-self-center mobile-top-fix">
+                    <div class="left-heading">
+                        <h2 class="section-title">Improve Your Career Development</h2>
+                    </div>
+                    <div class="left-text">
+                        <p>Developing your career is an ongoing process. From finding a mentor to progressing in your career, you’ll find all the advice and guidance you need here</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="hr"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Features Big Item End ***** -->
+
+    <!-- ***** Features Big Item Start ***** -->
+    <section class="section padding-bottom-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12 align-self-center mobile-bottom-fix">
+                    <div class="left-heading">
+                        <h2 class="section-title">We can help you to grow your business</h2>
+                    </div>
+                    <div class="left-text">
+                        <p>Giving back to your community and being socially responsible is a great way to grow your brand and showcase your business values. </p>
+                    </div>
+                </div>
+                <div class="col-lg-1"></div>
+                <div class="col-lg-5 col-md-12 col-sm-12 align-self-center mobile-bottom-fix-big" data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
+                    <img src="{% static 'assets/images/right-image.png' %}" class="rounded img-fluid d-block mx-auto" alt="App">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Features Big Item End ***** -->
+
+    <!-- ***** Home Parallax Start ***** -->
+    <section class="mini" id="work-process">
+        <div class="mini-content">
+            <div class="container">
+                <div class="row">
+                    <div class="offset-lg-3 col-lg-6">
+                        <div class="info">
+                            <h1>Work Process</h1>
+                            <p>Banking operations enable banks to provide better and personalised service to their customers. </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ***** Mini Box Start ***** -->
+                <div class="row">
+                    <div class="col-lg-2 col-md-3 col-sm-6 col-6">
+                        <a href="#" class="mini-box">
+                            <i><img src="{% static 'assets/images/work-process-item-01.png' %}" alt=""></i>
+                            <strong>Trade support</strong>
+                            <span>Trade support operations of a bank work with trading desks. </span>
+                        </a>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-6 col-6">
+                        <a href="#" class="mini-box">
+                            <i><img src="{% static 'assets/images/work-process-item-01.png' %}" alt=""></i>
+                            <strong>Risk analysis</strong>
+                            <span>Transactions are subject to risks because of human error</span>
+                        </a>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-6 col-6">
+                        <a href="#" class="mini-box">
+                            <i><img src="{% static 'assets/images/work-process-item-01.png' %}" alt=""></i>
+                            <strong>Corporate</strong>
+                            <span>Works with large companies and public institutions.</span>
+                        </a>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-6 col-6">
+                        <a href="#" class="mini-box">
+                            <i><img src="{% static 'assets/images/work-process-item-01.png' %}" alt=""></i>
+                            <strong>Technical</strong>
+                            <span>Technical operations provides security </span>
+                        </a>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-6 col-6">
+                        <a href="#" class="mini-box">
+                            <i><img src="{% static 'assets/images/work-process-item-01.png' %}" alt=""></i>
+                            <strong>Client service</strong>
+                            <span>Banking operations are loan processing payments</span>
+                        </a>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-6 col-6">
+                        <a href="#" class="mini-box">
+                            <i><img src="{% static 'assets/images/work-process-item-01.png' %}" alt=""></i>
+                            <strong>Retail banking</strong>
+                            <span>The retail banking team addresses KYC norms </span>
+                        </a>
+                    </div>
+                </div>
+                <!-- ***** Mini Box End ***** -->
+            </div>
+        </div>
+    </section>
+    <!-- ***** Home Parallax End ***** -->
+
+    <!-- ***** Testimonials Start ***** -->
+    <section class="section" id="testimonials">
+        <div class="container">
+            <!-- ***** Section Title Start ***** -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="center-heading">
+                        <h2 class="section-title">Customer service </h2>
+                    </div>
+                </div>
+                <div class="offset-lg-3 col-lg-6">
+                    <div class="center-text">
+                        <p>Customer service in the banking sector depends on efficient and prompt customer service. Customer service is the most important duty of the banking operations. Prompt and efficient service will develop good public relations, reduce complaints and increase business.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- ***** Section Title End ***** -->
+
+<!--            <div class="row">-->
+<!--                &lt;!&ndash; ***** Testimonials Item Start ***** &ndash;&gt;-->
+<!--                <div class="col-lg-4 col-md-6 col-sm-12">-->
+<!--                    <div class="team-item">-->
+<!--                        <div class="team-content">-->
+<!--                            <i><img src="{% static 'assets/images/testimonial-icon.png' %}" alt=""></i>-->
+<!--                            <p>Proin a neque nisi. Nam ipsum nisi, venenatis ut nulla quis, egestas scelerisque orci. Maecenas a finibus odio.</p>-->
+<!--                            <div class="user-image">-->
+<!--                                <img src="{% static 'http://placehold.it/60x60' %}" alt="">-->
+<!--                            </div>-->
+<!--                            <div class="team-info">-->
+<!--                                <h3 class="user-name">Catherine Soft</h3>-->
+<!--                                <span>Managing Director</span>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                &lt;!&ndash; ***** Testimonials Item End ***** &ndash;&gt;-->
+<!--                -->
+<!--                &lt;!&ndash; ***** Testimonials Item Start ***** &ndash;&gt;-->
+<!--                <div class="col-lg-4 col-md-6 col-sm-12">-->
+<!--                    <div class="team-item">-->
+<!--                        <div class="team-content">-->
+<!--                            <i><img src="{% static 'assets/images/testimonial-icon.png' %}" alt=""></i>-->
+<!--                            <p>Integer molestie aliquam gravida. Nullam nec arcu finibus, imperdiet nulla vitae, placerat nibh. Cras maximus venenatis molestie.</p>-->
+<!--                            <div class="user-image">-->
+<!--                                <img src="{% static 'http://placehold.it/60x60' %}" alt="">-->
+<!--                            </div>-->
+<!--                            <div class="team-info">-->
+<!--                                <h3 class="user-name">Kelvin Wood</h3>-->
+<!--                                <span>Digital Marketer</span>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                &lt;!&ndash; ***** Testimonials Item End ***** &ndash;&gt;-->
+<!--                -->
+<!--                &lt;!&ndash; ***** Testimonials Item Start ***** &ndash;&gt;-->
+<!--                <div class="col-lg-4 col-md-6 col-sm-12">-->
+<!--                    <div class="team-item">-->
+<!--                        <div class="team-content">-->
+<!--                            <i><img src="{% static 'assets/images/testimonial-icon.png' %}" alt=""></i>-->
+<!--                            <p>Quisque diam odio, maximus ac consectetur eu, auctor non lorem. Cras quis est non ante ultrices molestie. Ut vehicula et diam at aliquam.</p>-->
+<!--                            <div class="user-image">-->
+<!--                                <img src="{% static 'http://placehold.it/60x60' %}" alt="">-->
+<!--                            </div>-->
+<!--                            <div class="team-info">-->
+<!--                                <h3 class="user-name">David Martin</h3>-->
+<!--                                <span>Website Manager</span>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                &lt;!&ndash; ***** Testimonials Item End ***** &ndash;&gt;-->
+<!--            </div>-->
+        </div>
+    </section>
+    <!-- ***** Testimonials End ***** -->
+
+    <!-- ***** Pricing Plans Start ***** -->
+    <section class="section colored" id="pricing-plans">
+        <div class="container">
+            <!-- ***** Section Title Start ***** -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="center-heading">
+                        <h2 class="section-title">Pricing Plans</h2>
+                    </div>
+                </div>
+                <div class="offset-lg-3 col-lg-6">
+                    <div class="center-text">
+                        <p>Pricing plans are the ways that banks set and adjust the prices of their products and services to achieve their business objectives. </p>
+                    </div>
+                </div>
+            </div>
+            <!-- ***** Section Title End ***** -->
+
+            <div class="row">
+                <!-- ***** Pricing Item Start ***** -->
+                <div class="col-lg-4 col-md-6 col-sm-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.2s">
+                    <div class="pricing-item">
+                        <div class="pricing-header">
+                            <h3 class="pricing-title">Starter</h3>
+                        </div>
+                        <div class="pricing-body">
+                            <div class="price-wrapper">
+                                <span class="currency">$</span>
+                                <span class="price">14.50</span>
+                                <span class="period">monthly</span>
+                            </div>
+                            <ul class="list">
+                                <li class="active">All Professional Features</li>
+                                <li class="active">Test/Staging Instance</li>
+                                <li class="active">Asset Transformer Module</li>
+                                <li>15-minute support</li>
+<!--                                <li>Unlimited Emails</li>-->
+<!--                                <li>24/7 Security</li>-->
+                            </ul>
+                        </div>
+                        <div class="pricing-footer">
+                            <a href="#" class="main-button">Purchase Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- ***** Pricing Item End ***** -->
+
+                <!-- ***** Pricing Item Start ***** -->
+                <div class="col-lg-4 col-md-6 col-sm-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.4s">
+                    <div class="pricing-item active">
+                        <div class="pricing-header">
+                            <h3 class="pricing-title">Premium</h3>
+                        </div>
+                        <div class="pricing-body">
+                            <div class="price-wrapper">
+                                <span class="currency">$</span>
+                                <span class="price">21.50</span>
+                                <span class="period">monthly</span>
+                            </div>
+                            <ul class="list">
+                                <li class="active">Supports all digital file types</li>
+                                <li class="active">Powerful search capabilities </li>
+                                <li class="active">Single Sign On</li>
+                                <li class="active">15-minute support</li>
+<!--                                <li>Unlimited Emails</li>-->
+<!--                                <li>24/7 Security</li>-->
+                            </ul>
+                        </div>
+                        <div class="pricing-footer">
+                            <a href="#" class="main-button">Purchase Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- ***** Pricing Item End ***** -->
+
+                <!-- ***** Pricing Item Start ***** -->
+                <div class="col-lg-4 col-md-6 col-sm-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.6s">
+                    <div class="pricing-item">
+                        <div class="pricing-header">
+                            <h3 class="pricing-title">Advanced</h3>
+                        </div>
+                        <div class="pricing-body">
+                            <div class="price-wrapper">
+                                <span class="currency">$</span>
+                                <span class="price">42.00</span>
+                                <span class="period">monthly</span>
+                            </div>
+                            <ul class="list">
+                                <li class="active">Cashback</li>
+                                <li class="active">Payments & transfers</li>
+                                <li class="active">Card issuing fee</li>
+                                <li class="active">15-minute support</li>
+<!--                                <li class="active">Unlimited Emails</li>-->
+<!--                                <li class="active">24/7 Security</li>-->
+                            </ul>
+                        </div>
+                        <div class="pricing-footer">
+                            <a href="#" class="main-button">Purchase Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- ***** Pricing Item End ***** -->
+            </div>
+        </div>
+    </section>
+    <!-- ***** Pricing Plans End ***** -->
+
+    <!-- ***** Counter Parallax Start ***** -->
+    <section class="counter">
+        <div class="content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="count-item decoration-bottom">
+                            <strong>126</strong>
+                            <span>Projects</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="count-item decoration-top">
+                            <strong>63</strong>
+                            <span>Happy Clients</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="count-item decoration-bottom">
+                            <strong>18</strong>
+                            <span>Awards Wins</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="count-item">
+                            <strong>27</strong>
+                            <span>Countries</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Counter Parallax End ***** -->   
+
+    <!-- ***** Blog Start ***** -->
+    <section class="section" id="blog">
+        <div class="container">
+            <!-- ***** Section Title Start ***** -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="center-heading">
+                        <h2 class="section-title">Banking Policy And Procedures</h2>
+                    </div>
+                </div>
+                <div class="offset-lg-3 col-lg-6">
+                    <div class="center-text">
+                        <p>Ensure Clarity and Consistency Policies and procedures serve to ensure that your banking employees have a clear understanding of the bank’s expectations</p>
+                    </div>
+                </div>
+            </div>
+            <!-- ***** Section Title End ***** -->
+
+            <div class="row">
+                {% for i in result %}
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="blog-post-thumb">
+                        <div class="img">
+                            <img src="{{i.img.url}}" alt="">
+                        </div>
+                        <div class="blog-content">
+                            <h3>
+                                <a href="#">{{i.name}}</a>
+                            </h3>
+                            <div class="text">
+                                <p>{{i.desc}}</p>
+                            </div>
+                            <a href="#" class="main-button">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+<!--                <div class="col-lg-4 col-md-6 col-sm-12">-->
+<!--                    <div class="blog-post-thumb">-->
+<!--                        <div class="img">-->
+<!--                            <img src="{% static 'assets/images/blog-item-02.png' %}" alt="">-->
+<!--                        </div>-->
+<!--                        <div class="blog-content">-->
+<!--                            <h3>-->
+<!--                                <a href="#">National Pension System</a>-->
+<!--                            </h3>-->
+<!--                            <div class="text">-->
+<!--                                Pension plans provide financial security and stability during old age when people don't have a regular source of income-->
+<!--                            </div>-->
+<!--                            <a href="#" class="main-button">Read More</a>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="col-lg-4 col-md-6 col-sm-12">-->
+<!--                    <div class="blog-post-thumb">-->
+<!--                        <div class="img">-->
+<!--                            <img src="{% static 'assets/images/blog-item-03.png' %}" alt="">-->
+<!--                        </div>-->
+<!--                        <div class="blog-content">-->
+<!--                            <h3>-->
+<!--                                <a href="#">Citizen Charter</a>-->
+<!--                            </h3>-->
+<!--                            <div class="text">-->
+<!--                                purpose is to make customers aware of his rights and responsibilities in dealing with the Bank,the various products and services made available by the Bank.-->
+<!--                            </div>-->
+<!--                            <a href="#" class="main-button">Read More</a>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+            </div>
+        </div>
+    </section>
+    <!-- ***** Blog End ***** -->
+
+    <!-- ***** Contact Us Start ***** -->
+    <section class="section colored" id="contact-us">
+        <div class="container">
+            <!-- ***** Section Title Start ***** -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="center-heading">
+                        <h2 class="section-title">Talk To Us</h2>
+                        <h3>FOR MORE DETAILS</h3>
+                    </div>
+                </div>
+                <div class="offset-lg-3 col-lg-6">
+                    <div class="center-text">
+<!--                        <p>Maecenas pellente</p>-->
+                    </div>
+                </div>
+            </div>
+            <!-- ***** Section Title End ***** -->
+
+<!--            <div class="row">-->
+<!--                &lt;!&ndash; ***** Contact Text Start ***** &ndash;&gt;-->
+<!--                <div class="col-lg-4 col-md-6 col-sm-12">-->
+<!--                    <h5 class="margin-bottom-30">Keep in touch</h5>-->
+<!--                    <div class="contact-text">-->
+<!--                        <p>110-220 Quisque diam odio, maximus ac consectetur eu, 10260-->
+<!--                        <br>auctor non lorem</p>-->
+<!--                        <p>You are NOT allowed to re-distribute Softy Pinko template on any template collection websites. Thank you.</p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                &lt;!&ndash; ***** Contact Text End ***** &ndash;&gt;-->
+
+<!--                &lt;!&ndash; ***** Contact Form Start ***** &ndash;&gt;-->
+<!--                <div class="col-lg-8 col-md-6 col-sm-12">-->
+<!--                    <div class="contact-form">-->
+<!--                        <form id="contact" action="" method="get">-->
+<!--                          <div class="row">-->
+<!--                            <div class="col-lg-6 col-md-12 col-sm-12">-->
+<!--                              <fieldset>-->
+<!--                                <input name="name" type="text" class="form-control" id="name" placeholder="Full Name" required="">-->
+<!--                              </fieldset>-->
+<!--                            </div>-->
+<!--                            <div class="col-lg-6 col-md-12 col-sm-12">-->
+<!--                              <fieldset>-->
+<!--                                <input name="email" type="email" class="form-control" id="email" placeholder="E-Mail Address" required="">-->
+<!--                              </fieldset>-->
+<!--                            </div>-->
+<!--                            <div class="col-lg-12">-->
+<!--                              <fieldset>-->
+<!--                                <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your Message" required=""></textarea>-->
+<!--                              </fieldset>-->
+<!--                            </div>-->
+<!--                            <div class="col-lg-12">-->
+<!--                              <fieldset>-->
+<!--                                <button type="submit" id="form-submit" class="main-button">Send Message</button>-->
+<!--                              </fieldset>-->
+<!--                            </div>-->
+<!--                          </div>-->
+<!--                        </form>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                &lt;!&ndash; ***** Contact Form End ***** &ndash;&gt;-->
+<!--            </div>-->
+        </div>
+    </section>
+    <!-- ***** Contact Us End ***** -->
+    
+    <!-- ***** Footer Start ***** -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <ul class="social">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                        <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="copyright">Copyright &copy; 2020 HFC Nation Bank-</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- jQuery -->
+    <script src="{% static 'assets/js/jquery-2.1.0.min.js' %}"></script>
+
+    <!-- Bootstrap -->
+    <script src="{% static 'assets/js/popper.js' %}"></script>
+    <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Plugins -->
+    <script src="{% static 'assets/js/scrollreveal.min.js' %}"></script>
+    <script src="{% static 'assets/js/waypoints.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.counterup.min.js' %}"></script>
+    <script src="{% static 'assets/js/imgfix.min.js' %}"></script>
+    
+    <!-- Global Init -->
+    <script src="{% static 'assets/js/custom.js' %}"></script>
+
+  </body>
+</html>

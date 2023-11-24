@@ -1,0 +1,120 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+</head>
+<body>
+
+
+<div>
+    <img class="my_image" src="{% static 'assets/images/HFCBank.jpg' %}">
+
+</div>
+   <h1 style="text-align:center;color:DarkCyan" >How Can We Help you Today?</h1>
+
+<div class="container">
+    <div class="row" style="text-align:center">
+        <form action="new" method="post">
+    {% csrf_token %}
+
+    <a href="getdata" class="btn btn-warning">Click Here to Access Application Form</a>
+        </form>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="row">
+        {% for i in service_list %}
+        <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+            <img src="{{i.img.url}}" class="card-img-top" alt="..." width="200px" height="200px">
+            <div class="card-body">
+        <h3 class="card-title"><b>{{i.name}}</b></h3>
+    <p class="card-text"><i>{{i.desc}}</i></p>
+
+  </div>
+</div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+    <div class="row">
+        <h1 style="background-color:DarkCyan;color:AliceBlue">Exclusive Offers</h1>
+            <div class="container">
+                <div class="col-md-3 ">
+                <h4>Dear Customer's</h4>
+                    </div>
+                <P>Exciting News! We now offer Gold Loans tailored just for you. Unlock the value of your gold assets with our low-interest Gold Loan options. Quick approvals, hassle-free process.</P>
+    Features:
+<ul>
+    <li>Competitive Interest Rates</li>
+    <li> Flexible Repayment Options</li>
+    <li> Instant Loan Approval</li>
+</ul>
+            </div>
+    </div>
+
+
+
+    <div class="row">
+        <div class="col-12 col-sm-12 col-lg-6 text-center">
+            <div style="min-width:18rem;">
+                <img src="{% static 'assets/images/gloan12.jpg' %}" width="1450" height="500">
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="row">
+        <h1  style="background-color:DarkCyan;color:AliceBlue">HFC BANK Auto Loans - Drive Your Dreams </h1><br>
+<div class="container">
+        <h5>Ready to hit the road in your dream car? <strong> HFC BANK</strong> is here to help</h5>
+ Car Loans:
+<ul>
+    <li> Loan Amount: Up to Maximum loan of Rs.5 crore</li>
+     <li>Interest Rate: Competitive rates</li>
+     <li> Flexible Repayment: Tailored to fit your budget</li>
+</ul>
+
+<b>Your dream car awaits with HFC BANK</b>
+
+<div>
+    <img src="{% static 'assets/images/car.jpg' %}" width="1450" height="500">
+</div>
+</div>
+    </div>
+
+    <div class="row">
+ <h3 style="background-color:DarkCyan;color:AliceBlue"> ON A MISSION TO BUILD THE WORLD’S MOST CUSTOMER-FRIENDLY BANK</h3>
+
+    </div>
+
+
+
+<!--<div class="container" style="background-color:Gray;color:AliceBlue">-->
+    <div class="row"  style="background-color:Gray;color:AliceBlue">
+        <ul  style="text-align:center">
+           Terms and conditions | Disclaimer | Privacy Policy | Code of Commitment  | Sitemap |
+        </ul>
+        <ul style="text-align:center">
+          Visit our website or call +91 1234567890 for more details. Your financial goals, our priority! HFC BANK
+        </ul>
+         <ul style="text-align:center">
+               Copyright © 2023 HFC Bank. All rights reserved.
+
+        </ul>
+
+    </div>
+</div>
+
+</body>
+</html>

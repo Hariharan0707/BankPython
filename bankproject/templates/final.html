@@ -1,0 +1,16 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>success</title>
+</head>
+<body style="background-image:url({% static 'assets/images/shake1.jpg' %})">
+
+<h3 style="text-align:center;color:DarkGreen;background-color:Lavender">Your application has been successfully submitted. Thank you!</h3>
+<form action="final" method="post">
+    {% csrf_token %}
+    <a href="/" class="btn btn-success"><h2 style="text-align:center;color:Brown">Back To Home</h2></a>
+</form>
+</body>
+</html>
